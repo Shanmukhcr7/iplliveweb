@@ -185,13 +185,13 @@
 
         if (Hls.isSupported()) {
             hls = new Hls();
-            hls.loadSource('https://amitb3669.github.io/allinonereborn/willo.html');
+            hls.loadSource('https://amitb3669.github.io/allinonereborn/t-sports.html');
             hls.attachMedia(videoPlayer);
             hls.on(Hls.Events.MANIFEST_PARSED, function() {
                 videoPlayer.play();
             });
         } else if (videoPlayer.canPlayType('application/vnd.apple.mpegurl')) {
-            videoPlayer.src = 'https://amitb3669.github.io/allinonereborn/willo.html';
+            videoPlayer.src = 'https://amitb3669.github.io/allinonereborn/t-sports.html';
             videoPlayer.addEventListener('loadedmetadata', function() {
                 videoPlayer.play();
             });
